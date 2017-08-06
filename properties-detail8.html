@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
@@ -13,8 +14,9 @@
     <link rel="stylesheet" type="text/css" href="libraries/nvd3/nv.d3.min.css">
     <link rel="stylesheet" type="text/css" href="libraries/OwlCarousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="css/realsite.css">
+    <link rel="stylesheet" type="text/css" href="css/test.css">
 
-    <title>    Al Mouj
+    <title>    Al Hail Greens
  | MSR Properties </title>
 </head>
 
@@ -157,7 +159,7 @@
                         <a href="properties-detail.html#">Blog <i class="fa fa-caret-down"></i></a>
 
                         <ul class="sub-menu">
-                            <li><a href="blog-properties-grid.html">Listing Right Sidebar</a></li>
+                            <li><a href="blog-index.html">Listing Right Sidebar</a></li>
                             <li><a href="blog-index-left.html">Listing Left Sidebar</a></li>
                             <li><a href="blog-detail.html">Detail Page</a></li>
                         </ul><!-- /.sub-menu -->
@@ -191,7 +193,7 @@
         <div class="container">
             <div class="row">
                 <div class="content col-sm-8 col-md-9">
-                        <h1 class="page-header"> Al Hail Greens Apartment </h1>
+                        <h1 class="page-header"> Al Hail Greens </h1>
 
     <div class="row">
 
@@ -203,7 +205,7 @@
             </div><!-- /.module-info -->
 
             <div class="module-content vertical-align">
-                <span> 178 SQM</span>
+                <span>118SQM</span>
             </div><!-- /.module-content -->
         </div><!--- /.module -->
     </div>
@@ -236,94 +238,91 @@
     <div class="row">
     <div class="col-sm-12 col-md-7">
         <div class="property-gallery">
+
+          <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="https://scontent.fmct2-1.fna.fbcdn.net/v/t1.0-1/c1.0.320.320/p320x320/15056426_10205642013168162_7294222048699737702_n.jpg?oh=3887469b8348974c456dcf191e13eee1&oe=5A2EAB8E" style="width:100%">
+    <div class="text"> </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="http://www.realoman.com/uploads/gallery/13000227_1734401383443047_2924349188821793231_n.jpg" style="width:100%">
+    <div class="text">Compound</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="http://www.realoman.com/uploads/gallery/12985419_1734401650109687_1973803059760679032_n.jpg" style="width:100%">
+    <div class="text">living area</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="http://www.realoman.com/uploads/gallery/13015431_1734401450109707_5290957660345716351_n.jpg" style="width:100%">
+    <div class="text">Kitchen</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+
+
+
+
             <div class="property-gallery-preview">
-                <a href="properties-detail.html#">
-                    <img src="assets/img/tmp/medium/1.jpg" alt="">
-                </a>
             </div><!-- /.property-gallery-preview -->
 
-            <div class="property-gallery-list-wrapper">
-                <div class="property-gallery-list">
-                    <div class="property-gallery-list-item active">
-                        <a href="assets/img/tmp/medium/1.jpg">
-                            <img src="assets/img/tmp/medium/1.jpg" alt="">
-                        </a>
-                    </div>
 
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/2.jpg">
-                            <img src="assets/img/tmp/medium/2.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/3.jpg">
-                            <img src="assets/img/tmp/medium/3.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/4.jpg">
-                            <img src="assets/img/tmp/medium/4.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/5.jpg">
-                            <img src="assets/img/tmp/medium/5.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/6.jpg">
-                            <img src="assets/img/tmp/medium/6.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/1.jpg">
-                            <img src="assets/img/tmp/medium/1.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/2.jpg">
-                            <img src="assets/img/tmp/medium/2.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/3.jpg">
-                            <img src="assets/img/tmp/medium/3.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/4.jpg">
-                            <img src="assets/img/tmp/medium/4.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/5.jpg">
-                            <img src="assets/img/tmp/medium/5.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/6.jpg">
-                            <img src="assets/img/tmp/medium/6.jpg" alt="">
-                        </a>
-                    </div>
-                </div><!-- /.property-gallery-list -->
-            </div><!-- /.property-gallery-list-wrapper -->
         </div><!-- /.property-gallery -->
     </div>
 
     <div class="col-sm-12 col-md-5">
         <div class="property-list">
             <dl>
-                <dt>Price</dt><dd> 450 OMR / Month</dd>
+                <dt>Price</dt><dd> 450 OMR / Month </dd>
                 <dt>Location</dt><dd>Al Hail Greens </dd>
                 <dt>Type</dt><dd>Apartment</dd>
                 <dt>Parking</dt><dd>1 </dd>
@@ -361,11 +360,9 @@
     <div class="mb30">
     <h2>Description</h2>
 
-    <p class="text">
-      Located just opposite Shaden Al Hail Complex, close to EXTRA, Al Bahja Mall,
-      City Centre Carrefour and The Wave. Only few minutes to the Airport and Universities/Colleges.
-       Shops and restaurants are just around the area.
-      This complex has 24/7 security, elevators, and split type A/C system
+    <p>
+        2 bedrooms + Hall each in Al-Mouj Muscat (Waves Muscat) in Liwan properties. 3rd floor with one side facing the street & the other towards the pool.
+        Rent is RO 750 (negotiable)
     </p>
 
 
@@ -375,19 +372,18 @@
 
 <div class="property-amenities">
     <ul>
-        <li class="yes"> Air Condition</li>
-        <li class="no"> Pets
+        <li class="yes">Air Conditioning</li>
         <li class="yes">Balcony</li>
         <li class="no">Bedding</li>
-        <li class="yes">BBQ Area </li>
+        <li class="no">Cable TV</li>
         <li class="yes">Dishwasher</li>
         <li class="yes">Fridge</li>
         <li class="no">Internet</li>
-        <li class="no">Lift</li>
+        <li class="yes">Lift</li>
         <li class="yes">Microwave</li>
         <li class="yes">Oven</li>
         <li class="yes">Parking</li>
-        <li class="no">Communial Pool</li>
+        <li class="yes">Pool</li>
         <li class="no">Smoking</li>
     </ul>
 </div><!-- /.property-amenities -->
@@ -469,33 +465,33 @@
 </div><!-- /.footer -->
             </div><!-- /.page-wrapper-->
 
-            <script type="text/javascript" src="js/jquery.js"></script>
-            <script type="text/javascript" src="libraries/jquery-transit/jquery.transit.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="libraries/jquery-transit/jquery.transit.js"></script>
 
-            <script type="text/javascript" src="libraries/bootstrap/assets/javascripts/bootstrap/dropdown.js"></script>
-            <script type="text/javascript" src="libraries/bootstrap/assets/javascripts/bootstrap/collapse.js"></script>
-            <script type="text/javascript" src="libraries/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-            <script type="text/javascript" src="libraries/bootstrap-fileinput/js/fileinput.min.js"></script>
+<script type="text/javascript" src="libraries/bootstrap/assets/javascripts/bootstrap/dropdown.js"></script>
+<script type="text/javascript" src="libraries/bootstrap/assets/javascripts/bootstrap/collapse.js"></script>
+<script type="text/javascript" src="libraries/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="libraries/bootstrap-fileinput/js/fileinput.min.js"></script>
 
-            <script type="text/javascript" src="libraries/autosize/jquery.autosize.js"></script>
-            <script type="text/javascript" src="libraries/isotope/dist/isotope.pkgd.min.js"></script>
-            <script type="text/javascript" src="libraries/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
-            <script type="text/javascript" src="libraries/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="libraries/autosize/jquery.autosize.js"></script>
+<script type="text/javascript" src="libraries/isotope/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="libraries/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="libraries/jquery.scrollTo/jquery.scrollTo.min.js"></script>
 
-            <script src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization,places,drawing&amp;sensor=false" type="text/javascript"></script>
-            <script type="text/javascript" src="libraries/jquery-google-map/infobox.js"></script>
-            <script type="text/javascript" src="libraries/jquery-google-map/markerclusterer.js"></script>
-            <script type="text/javascript" src="libraries/jquery-google-map/jquery-google-map.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization,places,drawing&amp;sensor=false" type="text/javascript"></script>
+<script type="text/javascript" src="libraries/jquery-google-map/infobox.js"></script>
+<script type="text/javascript" src="libraries/jquery-google-map/markerclusterer.js"></script>
+<script type="text/javascript" src="libraries/jquery-google-map/jquery-google-map.js"></script>
 
-            <script type="text/javascript" src="libraries/nvd3/lib/d3.v3.js"></script>
-            <script type="text/javascript" src="libraries/nvd3/lib/d3.v3.js"></script>
-            <script type="text/javascript" src="libraries/nvd3/nv.d3.min.js"></script>
+<script type="text/javascript" src="libraries/nvd3/lib/d3.v3.js"></script>
+<script type="text/javascript" src="libraries/nvd3/lib/d3.v3.js"></script>
+<script type="text/javascript" src="libraries/nvd3/nv.d3.min.js"></script>
 
-            <script type="text/javascript" src="js/realsite.js"></script>
-            <script type="text/javascript" src="js/charts.js"></script>
-            <script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/realsite.js"></script>
+<script type="text/javascript" src="js/charts.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
 
-            <script>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

@@ -1,7 +1,8 @@
-properties-grid.html<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
@@ -13,6 +14,7 @@ properties-grid.html<!DOCTYPE html>
     <link rel="stylesheet" type="text/css" href="libraries/nvd3/nv.d3.min.css">
     <link rel="stylesheet" type="text/css" href="libraries/OwlCarousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="css/realsite.css">
+    <link rel="stylesheet" type="text/css" href="css/test.css">
 
     <title>    Al Mouj
  | MSR Properties </title>
@@ -157,7 +159,7 @@ properties-grid.html<!DOCTYPE html>
                         <a href="properties-detail.html#">Blog <i class="fa fa-caret-down"></i></a>
 
                         <ul class="sub-menu">
-                            <li><a href="blog-properties-grid.html">Listing Right Sidebar</a></li>
+                            <li><a href="blog-index.html">Listing Right Sidebar</a></li>
                             <li><a href="blog-index-left.html">Listing Left Sidebar</a></li>
                             <li><a href="blog-detail.html">Detail Page</a></li>
                         </ul><!-- /.sub-menu -->
@@ -203,7 +205,7 @@ properties-grid.html<!DOCTYPE html>
             </div><!-- /.module-info -->
 
             <div class="module-content vertical-align">
-                <span>130 SQM</span>
+                <span>130SQM</span>
             </div><!-- /.module-content -->
         </div><!--- /.module -->
     </div>
@@ -236,87 +238,100 @@ properties-grid.html<!DOCTYPE html>
     <div class="row">
     <div class="col-sm-12 col-md-7">
         <div class="property-gallery">
+
+          <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="assets/img/tmp/medium/AlmeeraE.jpeg" style="width:100%">
+    <div class="text">Dining Area</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="assets/img/tmp/medium/AlmeraE1.jpeg" style="width:100%">
+    <div class="text">Living area</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://www.listaproperty.com/property/get-image-large/A/228735/VkRya5H6IM.jpg" style="width:100%">
+    <div class="text">Washroom</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="assets/img/tmp/medium/almoujbed.jpg" style="width:100%">
+    <div class="text">Bedroom</div>
+  </div>
+
+
+    <div class="mySlides fade">
+      <div class="numbertext">5/ 6</div>
+      <img src="http://search.savills.com/content/assets/properties/omf0001l11301/L11301-2-20161030_083048_gal.jpg" style="width:100%">
+      <div class="text">Kitchen</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6/ 6</div>
+      <img src="assets/img/tmp/medium/almoujmarina.jpg" style="width:100%">
+      <div class="text">Marina</div>
+    </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+
+
+
+
             <div class="property-gallery-preview">
-                <a href="properties-detail.html#">
-                    <img src="assets/img/tmp/medium/1.jpg" alt="">
-                </a>
             </div><!-- /.property-gallery-preview -->
 
-            <div class="property-gallery-list-wrapper">
-                <div class="property-gallery-list">
-                    <div class="property-gallery-list-item active">
-                        <a href="assets/img/tmp/medium/1.jpg">
-                            <img src="assets/img/tmp/medium/1.jpg" alt="">
-                        </a>
-                    </div>
 
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/2.jpg">
-                            <img src="assets/img/tmp/medium/2.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/3.jpg">
-                            <img src="assets/img/tmp/medium/3.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/4.jpg">
-                            <img src="assets/img/tmp/medium/4.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/5.jpg">
-                            <img src="assets/img/tmp/medium/5.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/6.jpg">
-                            <img src="assets/img/tmp/medium/6.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/1.jpg">
-                            <img src="assets/img/tmp/medium/1.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/2.jpg">
-                            <img src="assets/img/tmp/medium/2.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/3.jpg">
-                            <img src="assets/img/tmp/medium/3.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/4.jpg">
-                            <img src="assets/img/tmp/medium/4.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/5.jpg">
-                            <img src="assets/img/tmp/medium/5.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="property-gallery-list-item">
-                        <a href="assets/img/tmp/medium/6.jpg">
-                            <img src="assets/img/tmp/medium/6.jpg" alt="">
-                        </a>
-                    </div>
-                </div><!-- /.property-gallery-list -->
-            </div><!-- /.property-gallery-list-wrapper -->
         </div><!-- /.property-gallery -->
     </div>
 
@@ -361,9 +376,9 @@ properties-grid.html<!DOCTYPE html>
     <div class="mb30">
     <h2>Description</h2>
 
-    <p class="text">
-        2 bedrooms + Hall each in Al-Mouj Muscat (Waves Muscat) in Liwan properties. 3rd floor with one side facing the street & the other towards the pool.
-        Rent is RO 700 (negotiable)
+    <p>
+        2 bedrooms + Hall in Al-Mouj Muscat (Waves Muscat) in Liwan properties. 3rd floor with one side facing the street & the other towards the pool.
+        Rent is RO 750 (negotiable)
     </p>
 
 
@@ -373,8 +388,8 @@ properties-grid.html<!DOCTYPE html>
 
 <div class="property-amenities">
     <ul>
-        <li class="yes">Central A/CConditioning</li>
-        <li class="yes"> Pets
+        <li class="yes">Central A/C</li>
+        <li class="yes"> Pets </li>
         <li class="yes">Balcony</li>
         <li class="no">Bedding</li>
         <li class="no">Cable TV</li>
