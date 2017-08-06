@@ -2,6 +2,12 @@
 <html>
 
 <head>
+<style>
+  #map {
+    height: 400px;
+    width: 100%;
+   }
+</style>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
@@ -377,8 +383,8 @@
     <h2>Description</h2>
 
     <p>
-        2 bedrooms + Hall in Al-Mouj Muscat (Waves Muscat) in Liwan properties. 3rd floor with one side facing the street & the other towards the pool.
-        Rent is RO 750 (negotiable)
+        2 bedrooms in Luban. 2nd floor, balcony facing the internal road and second room facing the pool.
+        Rent is RO 700 (negotiable)
     </p>
 
 
@@ -408,7 +414,26 @@
     <h2 class="page-header">Position on Map</h2>
 
 <div class="map-property">
-    <div id="map-property"></div><!-- /#map-property -->
+    <div id="map-property"></div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGGWmS19QnFXes_Zj3vKKAqmbXBWLiPvw&callback=initMap">
+    </script>
+
+    <!-- /#map-property -->
 </div><!-- /.map-property -->
 
     <div class="module">

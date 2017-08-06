@@ -3,6 +3,13 @@
 
 <head>
 
+<style>
+  #map {
+    height: 400px;
+    width: 100%;
+   }
+</style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
@@ -399,9 +406,26 @@
 
     <h2 class="page-header">Position on Map</h2>
 
-<div class="map-property">
-    <div id="map-property"></div><!-- /#map-property -->
-</div><!-- /.map-property -->
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script> async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGGWmS19QnFXes_Zj3vKKAqmbXBWLiPvw&callback=initMap">
+    </script>
+
+
+
 
     <div class="module">
     <div class="module-content">
